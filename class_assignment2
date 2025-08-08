@@ -1,0 +1,35 @@
+Create an empty list called my_list.
+Append the following elements to my_list: 10, 20, 30, 40.
+Insert the value 15 at the second position in the list.
+Extend my_list with another list: [50, 60, 70].
+Remove the last element from my_list.
+Sort my_list in ascending order.
+Find and print the index of the value 30 in my_list.
+
+mylist = []
+mylist.append(10)
+mylist.append(20)
+mylist.append(30)
+mylist.append(40)
+
+print(f"the appended list contains : {mylist}")
+
+#inseting the value 15 at the second position
+mylist.insert(1,15)
+print(f"the new list after inserting 15 is :{mylist}")
+
+#extend my list with another list
+thislist = [50,60,70]
+mylist.extend(thislist)
+print(f"the new list after extending thislist is: {mylist}")
+
+#removing the last item  from the list
+mylist.pop()
+print(f"my list after removing the last item in the list is: {mylist}")
+
+#sorting my list in ascendind order
+mylist.sort()
+print(f"new list after sorting is : {mylist}")
+
+#finding and printing the index of the value 30 in  my list
+print(f"the index of 30 is : {mylist.index(30)}")
